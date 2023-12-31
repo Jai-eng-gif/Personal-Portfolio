@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="shortcut icon" type="x-icon" href="./images/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Jai</span><br>Gawande From Mumbai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bgg.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate and skilled web developer with a strong foundation in both frontend and backend
+                        technologies. Proficient in languages like JavaScript and Python, frameworks such as React and
+                        Django, and adept at creating seamless, responsive, and feature-rich web applications. Committed
+                        to delivering efficient and user-friendly digital solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Versatile web developer with expertise in React.js,
+                                JavaScript, and API integration. Proficient in crafting responsive and dynamic user
+                                interfaces using HTML and CSS. Committed to delivering seamless and engaging web
+                                experiences through innovative coding and a keen eye for design.
+                            </li>
+                            <li><span>Backend Development</span><br>Seasoned backend developer specializing in Python,
+                                Django, and Flask. Proven expertise in designing and implementing RESTful APIs using
+                                Django Rest Framework. Excels in problem-solving and optimizing code for performance,
+                                ensuring
+                                robust and reliable backend functionality.
+                            </li>
+                            <!-- <li><span>Web Development</span><br>Web app interfaces</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current (Application Engineer)</span><br>Have hands-on experience in
+                                technologies like PL/SQL, Linux
+                                commands, and data analysis. The
+                                primary responsibility was to resolve user transaction issues, monitor the health of the
+                                application, deploy patches, and reboot the application weekly</li>
+                            <!-- <li><span>2022-Current</span><br>Application Engineer</li> -->
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>MCA in CS & IT from Jain University Bengaluru</li>
+                            <li><span>2021</span><br>BSC. IT from University of Mumbai</li>
+                            <!-- <li><span>Web Developer<br>Designing Web interfaces</span></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+
+        </div>
+    </div> -->
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/netflix.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Netflix Clone</b></h3>
+                        <p><b>Immerse in a Netflix-inspired homepage clone</b></p>
+                        <a href="https://netflex-india.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/t.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Tic Tac Toe Game</b></h3>
+                        <p><b>Enjoy timeless fun with our Tic Tac Toe game. Challenge friends or play solo, strategic
+                                thrills in a classic grid.</b></p>
+                        <a href="https://x-zero-game.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo.jpeg" alt="">
+                    <div class="layer">
+                        <h3><b>React Notes</b></h3>
+                        <p><b>Efficiently manage tasks with our React Notes app. Streamlined UI, easy organization, and
+                                quick access for enhanced productivity and convenience. </b></p>
+                        <a href="https://todonotes-app.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/rock-paper-scissors-vector-icons.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Stone Paper Scissor Game</b></h3>
+                        <p><b>Play Stone Paper Scissors, the classic hand game and challenge the computer .Choose your
+                                move wisely to defeat your opponent. Simple, fun, and timeless</b></p>
+                        <a href="https://stone-paper-scissor-g.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/uability.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Usability Hub Clone Clone</b></h3>
+                        <p><b>Explore our Usability Hub Clone, a user-friendly platform for insightful feedback</b></p>
+                        <a href="https://usability-hub-clone-web.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/cc.jpeg" alt="">
+                    <div class="layer">
+                        <h3><b>Currency Converter</b></h3>
+                        <p><b>Swiftly convert currencies with our intuitive currency converter. Stay updated on exchange
+                                rates, making global transactions hassle-free and informed.</b></p>
+                        <a href="https://all-currency-converter.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="work">
+                    <img src="images/MainImage-11.png" alt="">
+                    <div class="layer">
+                        <h3><b>GitHub</b></h3>
+                        <p><b>Discover more projects on our GitHub profile. Explore diverse repositories showcasing
+                                coding expertise, innovation, and passion for technology</b></p>
+                        <a href="https://github.com/Jai-eng-gif?tab=repositories" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>gawande20jai@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7977082901</p>
+                    <div class="social-icons">
+                        <a href="" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/jaigawande" target="_blank"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jai-gawande-4ba500231/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jai.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/85b998403a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
